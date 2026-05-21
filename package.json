@@ -12,7 +12,7 @@
   "type": "commonjs",
   "dependencies": {
     "dotenv": "^17.4.2",
-    "express": "^5.2.1",
+    "express": "^4.22.2",
     "nanoid": "^3.3.12",
     "redis": "^5.12.1"
   }
