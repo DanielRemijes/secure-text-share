@@ -44,11 +44,6 @@ app.delete('/api/texts/:id', async (req, res) => {
   res.json({ message: 'Deleted' });
 });
 
-// Fallback to frontend
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
-
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
