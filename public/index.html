@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Secure Text Share</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Secure Text Share</h1>
+
+    <!-- Create Section -->
+    <div class="card" id="create-section">
+      <h2>Share a Text</h2>
+      <textarea id="text-input" placeholder="Type your secret text here..."></textarea>
+      <select id="duration">
+        <option value="300">5 minutes</option>
+        <option value="3600">1 hour</option>
+        <option value="86400">24 hours</option>
+      </select>
+      <button onclick="createText()">Generate Link</button>
+      <div id="result-box" class="hidden">
+        <p>Your shareable link:</p>
+        <input type="text" id="share-link" readonly />
+        <button onclick="copyLink()">Copy</button>
+        <button class="danger" onclick="deleteText()">Delete Now</button>
+      </div>
+    </div>
+
+    <!-- Retrieve Section -->
+    <div class="card" id="retrieve-section">
+      <h2>Retrieve a Text</h2>
+      <input type="text" id="retrieve-id" placeholder="Paste the link or ID here..." />
+      <button onclick="retrieveText()">Retrieve</button>
+      <div id="retrieved-box" class="hidden">
