@@ -11,6 +11,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@upstash/redis": "^1.38.0",
     "dotenv": "^17.4.2",
     "express": "^4.22.2",
     "nanoid": "^3.3.12",
