@@ -16,8 +16,8 @@
       "dest": "/public/style.css"
     },
     {
-      "src": "/app.js",
-      "dest": "/public/app.js"
+      "src": "/main.js",
+      "dest": "/public/main.js"
     },
     {
       "src": "/(.*)",
